@@ -1,0 +1,55 @@
+<div class="controls">
+  <div class="btn-group btn-boot">
+    <button type="button" class="btn btn-success" ng-click="boot()">
+      <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="btn btn-danger" ng-click="shutdown()">
+      <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+    </button>
+    <div>
+      <p ng-class="{offline: !status, online: status}">{{status | status}}</p>
+    </div>
+  </div>
+  <div class="btn-group btn-queue">
+    <button type="button" class="btn btn-default btn-next" ng-click="getAC()">
+      <span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="btn btn-primary" ng-click="enqueue()">
+      <span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-import" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="btn btn-primary" ng-click="dequeue()">
+      <span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-export" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<div ng-arrival class="arrival"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="well well-lg">
+      <h1>PL Aircraft</h1>
+      <div class="img-queue pl" ng-queue type="p" size="l"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="well well-lg">
+      <h1>PS Aircraft</h1>
+      <div class="img-queue ps" ng-queue type="p" size="s"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="well well-lg">
+      <h1>CL Aircraft</h1>
+      <div class="img-queue cl" ng-queue type="c" size="l"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="well well-lg">
+      <h1>CS Aircraft</h1>
+      <div class="img-queue cs" ng-queue type="c" size="s"></div>
+    </div>
+  </div>
+</div>

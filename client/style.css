@@ -1,0 +1,107 @@
+h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  margin: auto;
+}
+div.ng-scope {
+  background-color: #708090;
+}
+.offline {
+  color: red;
+}
+.online {
+  color: green;
+}
+.well, .well-lg {
+  overflow: auto;
+}
+.arrival, .img-queue {
+  min-height: 75px;
+  height: auto;
+}
+.arrival > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-queue > img {
+  display: inline-block;
+  float: right;
+  -webkit-animation: rotate-left 4s infinite linear;
+  -moz-animation: rotate-left 4s infinite linear;
+  -ms-animation: rotate-left 4s infinite linear;
+  -o-animation: rotate-left 4s infinite linear;
+  animation: rotate-left 4s infinite linear;
+}
+.controls {
+  text-align: center;
+}
+.btn-boot, .btn-next, .btn-queue {
+  position: fixed;
+  z-index: 10;
+}
+.btn-boot {
+  left: 0;
+  top: 0;
+  float: left;
+}
+.btn-queue {
+  right: 0;
+  top: 0;
+  float: right;
+}
+@-webkit-keyframes rotate-left {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(12deg);
+  }
+}
+@-moz-keyframes rotate-left {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(12deg);
+  }
+}
+@-ms-keyframes rotate-left {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(12deg);
+  }
+}
+@-o-keyframes rotate-left {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(12deg);
+  }
+}
+@keyframes rotate-left {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(12deg);
+  }
+}
